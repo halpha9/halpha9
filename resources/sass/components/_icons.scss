@@ -1,0 +1,85 @@
+.sticky-social {
+	display:flex;
+	flex-direction:column;
+	top:40%;
+	left:3%;
+	jusitify-content:center;
+	position:fixed;
+	background-color:transparent;
+}
+
+
+.instagram, .facebook, .twitter, .linkedin,{
+
+	&__icon{
+		height:2rem;
+		width:2rem;
+		margin:1rem;
+		fill:var(--color-lightgrey);
+		transition:transform 0.5s;
+
+		&:hover{
+		transform:scale(1.1);
+		}
+	}
+}
+
+.facebook{
+
+	&__icon{
+
+		&:hover{
+		fill:var(--color-facebook);
+		}
+	}
+}
+
+.twitter{
+
+	&__icon{
+
+		&:hover{
+		fill:var(--color-twitter);
+		}
+	}
+}
+
+
+.linkedin{
+
+	&__icon{
+	
+		&:hover{
+		fill:var(--color-linkedin);
+		}
+	}
+}
+
+.instagram{
+
+	&__icon{
+
+		&:hover{
+		fill:var(--color-instagram);
+		}
+	}
+}
+
+.moon {
+
+	left: 96%;
+	top:50%;
+	position:fixed;
+
+	&__icon{
+		height:2rem;
+		width:2rem;
+		margin:1rem;
+		fill:var(--color-lightgrey);
+		transition:transform 0.5s;
+
+		&:hover{
+		transform:scale(1.1);
+		}
+	}
+}

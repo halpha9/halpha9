@@ -1,0 +1,48 @@
+.footer {
+	display:flex;
+	justify-content:space-between;
+	margin-top:15rem;
+	padding:3rem 5rem 0rem 3rem;
+	//align-items:baseline;
+	height:10vh;
+	background-color:var(--color-darkgrey);
+
+	 &__copyright{
+	 	color:var(--color-white);
+	 }
+
+	 &__name{
+	 	text-decoration:none;
+	 	color:var(--color-white);
+	 }
+
+	 &__nav{
+	 	
+
+	 	& ul{
+	 		list-style:none;
+	 		display:flex;
+
+	 		& li {
+	 			margin-left:2rem;
+
+	 			& a {
+	 				text-decoration:none;
+	 				color:var(--color-white);
+	 				padding:.5rem 0;
+	 				transition: all 0.3s;
+
+	 				&:linked,
+	 				&:visited {
+	 					border-bottom: 2px solid transparent;
+	 				}
+
+	 				&:hover,
+	 				&:active {
+	 					border-bottom: 2px solid var(--color-primary);
+	 				}
+	 			}
+	 		}
+	 	}
+	 }
+}
