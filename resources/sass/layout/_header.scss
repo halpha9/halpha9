@@ -6,6 +6,12 @@
 	position:relative;
 	//margin-bottom:10rem;
 
+	@media only screen and (max-width:$breakpoint-500) {
+
+		height:50vh;
+		background-size:cover;
+	}
+
 
 	&__block {
 		display:flex;
@@ -88,6 +94,12 @@
 		top:25rem;
 		left:30rem;
 		text-align:left;
+
+		@media only screen and (max-width:$breakpoint-832) {
+			top:17rem;
+		}
+
+		
 	}
 
 	&__text-box h1{

@@ -2,10 +2,14 @@
 	display:flex;
 	justify-content:space-between;
 	margin-top:15rem;
-	padding:3rem 5rem 0rem 3rem;
-	//align-items:baseline;
-	height:10vh;
+	padding:5rem;
 	background-color:var(--color-darkgrey);
+	font-size:80%;
+
+
+	@media only screen and (max-width:$breakpoint-600) {
+		font-size:100%;
+	}
 
 	 &__copyright{
 	 	color:var(--color-white);

@@ -2,6 +2,10 @@
 	margin:4rem 12rem;
 	position:relative;
 
+	@media only screen and (max-width:$breakpoint-1023) {
+  		margin:4rem 12rem;
+    }
+
 	
 		
 	&__block {
@@ -18,7 +22,6 @@
 		align-items:center;
 		position:absolute;
 		box-shadow:.2rem .3rem 2rem rgba(black, 0.2);
-		margin-bottom:10rem;
 	}
 
 	&__box {

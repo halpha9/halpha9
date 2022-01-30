@@ -3,7 +3,51 @@
 	padding-bottom:8rem;
 }
 
-.section-footer{
-	background-color:var(--color-darkgrey);
-	padding-bottom:8rem;
+.section-projects {
+
+@media only screen and (max-width:$breakpoint-1023) {
+		height:190rem;
+	}
+
+@media only screen and (max-width:$breakpoint-832) {
+		height:165rem;
+	}
+
+@media only screen and (max-width:$breakpoint-600) {
+		height:145rem;
+	}
+
+@media only screen and (max-width:$breakpoint-400) {
+		height:155rem;
+	}
+	
+}
+
+
+.header {
+
+@media only screen and (max-width:$breakpoint-832) {
+		height:55rem;
+	}
+	
+}
+
+.section-about {
+
+@media only screen and (max-width:$breakpoint-600) {
+		height:55rem;
+	}
+	
+}
+
+.section-skills {
+
+@media only screen and (max-width:$breakpoint-832) {
+		height:40rem;
+	}
+
+@media only screen and (max-width:$breakpoint-600) {
+		height:40rem;
+	}
+	
 }

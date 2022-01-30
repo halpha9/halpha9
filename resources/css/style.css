@@ -1,9 +1,37 @@
+:root {
+  --color-primary:#1bb883;
+  --color-primary-light:#8bbbab;
+  --color-black:#000;
+  --color-white:#fff;
+  --color-lightgrey:#BCBCBC;
+  --color-lightgrey-2:#f2f2f2;
+  --color-darkgrey:#808080;
+  --color-darkgrey-2:#191919;
+  --color-yellow:#f2cf0d;
+  --color-facebook:#3b5998;
+  --color-twitter:#1da1f2;
+  --color-instagram:#c32aa3;
+  --color-linkedin:#0a66c2; }
+
+/* MEDIA QUERY BREAKPOINTS 
+    0-576px for portrait phones.
+    577-768px for tablets in portrait mode.
+    769-991 for tablets in landcape mode.
+    992-1200px for laptops.
+    1200px+ for large devices.
+
+
+*/
 .header {
   width: 100%;
   height: 100vh;
   background-color: var(--color-white);
   background-size: 64rem;
   position: relative; }
+  @media only screen and (max-width: 33.125em) {
+    .header {
+      height: 50vh;
+      background-size: cover; } }
   .header__block {
     display: flex;
     justify-content: space-between;
@@ -57,6 +85,9 @@
     top: 25rem;
     left: 30rem;
     text-align: left; }
+    @media only screen and (max-width: 52em) {
+      .header__box {
+        top: 17rem; } }
   .header__text-box h1 {
     font-size: 6rem;
     font-weight: 600;
@@ -107,9 +138,12 @@
   display: flex;
   justify-content: space-between;
   margin-top: 15rem;
-  padding: 3rem 5rem 0rem 3rem;
-  height: 10vh;
-  background-color: var(--color-darkgrey); }
+  padding: 5rem;
+  background-color: var(--color-darkgrey);
+  font-size: 80%; }
+  @media only screen and (max-width: 41em) {
+    .footer {
+      font-size: 100%; } }
   .footer__copyright {
     color: var(--color-white); }
   .footer__name {
@@ -130,21 +164,6 @@
         .footer__nav ul li a:hover, .footer__nav ul li a:active {
           border-bottom: 2px solid var(--color-primary); }
 
-:root {
-  --color-primary:#1bb883;
-  --color-primary-light:#8bbbab;
-  --color-black:#000;
-  --color-white:#fff;
-  --color-lightgrey:#BCBCBC;
-  --color-lightgrey-2:#f2f2f2;
-  --color-darkgrey:#808080;
-  --color-darkgrey-2:#191919;
-  --color-yellow:#f2cf0d;
-  --color-facebook:#3b5998;
-  --color-twitter:#1da1f2;
-  --color-instagram:#c32aa3;
-  --color-linkedin:#0a66c2; }
-
 * {
   margin: 0;
   padding: 0; }
@@ -156,6 +175,24 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 63.938em) {
+    html {
+      font-size: 47%; } }
+  @media only screen and (max-width: 52em) {
+    html {
+      font-size: 37%; } }
+  @media only screen and (max-width: 41em) {
+    html {
+      font-size: 30%; } }
+  @media only screen and (max-width: 33.125em) {
+    html {
+      font-size: 25%; } }
+  @media only screen and (max-width: 28.25em) {
+    html {
+      font-size: 22%; } }
+  @media only screen and (max-width: 25em) {
+    html {
+      font-size: 20%; } }
 
 body {
   font-family: 'Work Sans', sans-serif;
@@ -246,7 +283,7 @@ body {
     height: 2rem;
     width: 2rem;
     margin: 1rem;
-    fill: var(--color-lightgrey);
+    fill: var(--color-white);
     transition: transform 0.5s; }
     .moon__icon:hover {
       transform: scale(1.1); }
@@ -389,6 +426,9 @@ body {
   .projects__block {
     display: flex;
     margin-bottom: 20rem; }
+    @media only screen and (max-width: 52em) {
+      .projects__block {
+        margin-bottom: 10rem; } }
   .projects__img {
     height: 40rem;
     width: auto;
@@ -419,7 +459,8 @@ body {
   .projects__title {
     font-weight: 600;
     font-size: 3rem;
-    margin-bottom: 2.3rem; }
+    margin-bottom: 2.3rem;
+    color: var(--color-lightgrey); }
   .projects__desc {
     background-color: var(--color-lightgrey-2);
     border-radius: .5rem;
@@ -436,6 +477,9 @@ body {
 .contact {
   margin: 4rem 12rem;
   position: relative; }
+  @media only screen and (max-width: 63.938em) {
+    .contact {
+      margin: 4rem 12rem; } }
   .contact__block {
     width: 100%;
     height: 15rem;
@@ -454,10 +498,38 @@ body {
     color: var(--color-darkgrey);
     text-align: center; }
 
-.section-about, .section-skills, .section-projects, .section-contact, .section-header, .section-footer {
+.section-about, .section-skills, .section-projects, .section-contact, .section-header {
   background-color: var(--color-white);
   padding-bottom: 8rem; }
 
-.section-footer {
-  background-color: var(--color-darkgrey);
-  padding-bottom: 8rem; }
+@media only screen and (max-width: 63.938em) {
+  .section-projects {
+    height: 190rem; } }
+
+@media only screen and (max-width: 52em) {
+  .section-projects {
+    height: 165rem; } }
+
+@media only screen and (max-width: 41em) {
+  .section-projects {
+    height: 145rem; } }
+
+@media only screen and (max-width: 25em) {
+  .section-projects {
+    height: 155rem; } }
+
+@media only screen and (max-width: 52em) {
+  .header {
+    height: 55rem; } }
+
+@media only screen and (max-width: 41em) {
+  .section-about {
+    height: 55rem; } }
+
+@media only screen and (max-width: 52em) {
+  .section-skills {
+    height: 40rem; } }
+
+@media only screen and (max-width: 41em) {
+  .section-skills {
+    height: 40rem; } }
