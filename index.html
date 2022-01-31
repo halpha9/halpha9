@@ -95,7 +95,9 @@
             <div class = "about">
 
                 <div class = "about__left">
-                    <p class = "about__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class = "about__para">I’m a Front-End Developer born and raised in London. The first time I experienced web design was on Tumblr 5+ years ago custom editing Tumblr themes. Fast forward to the last few months I have taken a real interest in web design and developing my coding skills.<br><br>
+                    Over the last few months, I have developed in <strong>CSS, Html, JavaScript </strong> in addition to my knowledge in <strong>C++</strong> and <strong>Python</strong> . I am well organised and quick learner and I hope to further my skills with a job in Web Development.
+                    </p>
 
                     <div class = "about__work">
                         <div class ="about__points">
@@ -130,29 +132,33 @@
                 <input type="radio" class = "skills__radio-btn" id = "tab2" value = "2" name = "tab">
                 <input type="radio" class = "skills__radio-btn" id = "tab3" value = "3" name = "tab">
                     <div class = "skills__nav">
-                            <label class = "skills__radio-label" for = "tab1">Languages Studied</label>
-                            <label class = "skills__radio-label" for = "tab2">Html</label>
-                            <label class = "skills__radio-label" for = "tab3">Pyhton</label>
+                            <label class = "skills__radio-label" for = "tab1">Html</label>
+                            <label class = "skills__radio-label" for = "tab2">CSS</label>
+                            <label class = "skills__radio-label" for = "tab3">JavaScript</label>
                     </div>
 
                     <div class = "skills__content">
                         <div class = "skills__tab">
-                            <h3>Languages Studied</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit
+                            <p>
+                                The first step into Web development was to learn <strong>Html</strong> . Used to arrange webpages and house content of them, it was important for me to understand it and know how to use it correctly.<br><br>
 
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                Over the last few months, I have worked to understand various elements in Html whether that be the <strong>“div”, “script”</strong> or <strong>"tag"</strong> elements, learning how to use these elements to convey information as well as learning the BEM model to structure the elements of the webpage.
+
+                            </p>
                         </div>
 
                         
                         <div class = "skills__tab">
-                            <h3>Python</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <p><strong>CSS</strong>  I have to say is my favourite language to use as a web developer the multitude of options allows for almost unlimited ways to style Html documents. After initially learning <strong>CSS</strong>  I have also learnt <strong>SASS</strong> which just provides such an efficient way to code especially used with the BEM model.<br><br>
+                            I learnt many ways to style elements, but my favourite aspect is the way <strong>CSS</strong>  can be used in conjunction to create sleek and professional-looking menus such as the one you are using now.
+
+
+                            </p>
                         </div>
 
                         
                         <div class = "skills__tab">
-                            <h3>Html</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <p><strong>JavaScript</strong> is the language I have the least experience with when it comes to Front-End Development however it is the one, I am focusing the most on currently to improve my current capabilities. <br><br> It is great for adding interactivity to a website, dynamic styling and can greatly improve the overall appearance.</p>
                         </div>
                     </div>
             </div>
@@ -174,7 +180,7 @@
                         <p class = "projects__desc">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
                         <p class = "projects__components">CSS 
                             Html
-                            Java Script 
+                            JavaScript 
                         </p>
                     </div>
                 </div>
@@ -185,7 +191,7 @@
                         <p class = "projects__desc">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
                         <p class = "projects__components">CSS 
                             Html
-                            Java Script 
+                            JavaScript 
                         </p>
                     </div>
                     <a href="https://halpha9.github.io/LakeView"><img src="resources/img/lakeview.png" alt = "Buzzwhizz" class = "projects__img projects__img-left"></a>
@@ -198,7 +204,7 @@
                         <p class = "projects__desc">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
                         <p class = "projects__components">CSS 
                             Html
-                            Java Script 
+                            JavaScript 
                         </p>
                     </div>
                 </div>
@@ -228,7 +234,7 @@
 
         <footer class = "footer">
             <div class = "footer__copyright">
-            <p>This Webpage has been created by <a href = # class = "footer__name">Harry Alpha</a></p>
+            <p>This Webpage has been created by <a href = "#" class = "footer__name">Harry Alpha</a></p>
             </div>
             <div class = "footer__nav">
                 <ul>
@@ -242,5 +248,31 @@
     </body>
 <script type="text/javascript" src="resources/js/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
         
 </html>
