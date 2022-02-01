@@ -7,10 +7,6 @@
 	font-size:80%;
 
 
-	@media only screen and (max-width:$breakpoint-600) {
-		font-size:100%;
-	}
-
 	 &__copyright{
 	 	color:var(--color-white);
 	 }

@@ -6,12 +6,6 @@
 	position:relative;
 	//margin-bottom:10rem;
 
-	@media only screen and (max-width:$breakpoint-500) {
-
-		height:50vh;
-		background-size:cover;
-	}
-
 
 	&__block {
 		display:flex;
@@ -95,7 +89,7 @@
 		left:30rem;
 		text-align:left;
 
-		@media only screen and (max-width:$breakpoint-832) {
+		@media only screen and (max-width:$breakpoint-832) and (-webkit-min-device-pixel-ratio: 1), (min-resolution: 192dpi){
 			top:17rem;
 		}
 
@@ -123,6 +117,10 @@
 
 .header__title {
 	display:flex;
+	//width:1rem;
+	//height:57%;
+	//background:linear-gradient((var(--color-primary)),(var(--color-primary-light)));
+
 
 	&-2{
 		transition: all 0.4s;
@@ -182,6 +180,39 @@
 	font-size:2rem;
 	text-align:center;
 	font-weight:400;
+	
+}
+
+
+
+.contact-heading h2{
+	font-size:4rem;
+	text-align:center;
+	font-weight:550;
+	text-transform:capitalize;
+	//border:2px solid pink;
+	margin:8rem;
+
+		transition: all 0.4s;
+
+		&:linked,
+		&:visited {
+
+		}
+
+	
+		&:hover {
+			color:var(--color-primary);
+			text-shadow:0.3rem 0.3rem 0.8rem rgba(black,0.2);
+			transform:translateY(-.3rem);
+		}
+
+
+		&:active{
+			color:var(--color-primary);
+			text-shadow:0.3rem 0.3rem 0.8rem rgba(black,0.2);
+			transform:translateY(-.1rem);
+		}
 	
 }
 

@@ -37,6 +37,7 @@
 		line-height:2.5rem;
 		width:60%;
 		margin-bottom:3rem;
+		font-weight:500;
 	}
 
 	&__work {
@@ -76,7 +77,7 @@
 
 		&:hover .about__border {
 			transform:translate(1rem, 1rem);
-			transition: all .7s;
+			
 		}
 		
 	}
@@ -98,13 +99,14 @@
 	}
 
 	&__border{
-		border:5px solid var(--color-primary);
+		background-color: var(--color-primary);
 		position:absolute;
 		width:100%;
 		height:100%;
 		top:0;
 		left:0;
-		transform:translate(2rem, 2rem);
+		//transform:translate(2rem, 2rem);
+		opacity:.4;
 		z-index:-1;
 		transition: all .7s;
 	}
