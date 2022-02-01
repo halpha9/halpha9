@@ -1,7 +1,25 @@
-const tabs=document.querySelectorAll('.skill');
+$(document).ready(function(){
 
-tabs.forEach(tab => {
-	tab.addEventListerner('click', () =>{
-		const tage
-	})
-})
+    function clickSingleA(a)
+    {
+        items = document.querySelectorAll('.single.active');
+
+        if(items.length) 
+        {
+            items[0].className = 'single';
+        }
+
+        a.className = 'single active';
+    }
+
+
+	$(".section-about").waypoint(function(direction) {
+        if(direction=="down") {
+            $('.sector').addClass('navigation');
+        }
+        else {
+            $('.sector').removeClass('navigation');
+        }
+    });
+});
+

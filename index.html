@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         
         <link href='http://fonts.googleapis.com/css?family=Work Sans:100,300,400,500,800' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="resources/css/style.css">
@@ -43,6 +43,7 @@
                     <a href="#contact" class="btn btn-gtg">contact me</a>
                 </div>
             </div>
+            
         </header>
 
         <div class = "sticky-social">
@@ -76,7 +77,9 @@
                     <svg class = "instagram__icon" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" role="img"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913a5.885 5.885 0 0 0 1.384 2.126A5.868 5.868 0 0 0 4.14 23.37c.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558a5.898 5.898 0 0 0 2.126-1.384 5.86 5.86 0 0 0 1.384-2.126c.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913a5.89 5.89 0 0 0-1.384-2.126A5.847 5.847 0 0 0 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227a3.81 3.81 0 0 1-.899 1.382 3.744 3.744 0 0 1-1.38.896c-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421a3.716 3.716 0 0 1-1.379-.899 3.644 3.644 0 0 1-.9-1.38c-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 0 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
                 </a>
             </div>
+
         </div>
+
 
         <div class = "moon">
                 <a href="#" class = "moon__link">  
@@ -84,9 +87,21 @@
                           <path d="m275.4,500.7c-135,0-244.7-109.8-244.7-244.7 1.06581e-14-134.9 109.8-244.7 244.7-244.7 8.2,0 16.4,0.4 24.6,1.2 7.2,0.7 13.5,5.2 16.5,11.7s2.4,14.2-1.6,20.2c-23,33.8-35.2,73.3-35.2,114.2 0,105 78.7,192.2 183.2,202.6 7.2,0.7 13.5,5.2 16.5,11.7 3.1,6.5 2.4,14.2-1.6,20.2-45.8,67.4-121.4,107.6-202.4,107.6zm-12.5-448c-106.5,6.5-191.2,95.2-191.2,203.3 1.42109e-14,112.3 91.4,203.7 203.7,203.7 56.4,0 109.6-23.4 147.8-63.7-46.2-11.7-88.1-36.8-120.8-72.6-41.1-45.2-63.8-103.6-63.8-164.6 0.1-37.1 8.4-73.2 24.3-106.1z"/>
                     </svg>
                 </a>
+
         </div>
 
-           <div id = "about" class = "section-heading">
+        <div class = "selector">
+                <ul class = "sector">
+                    <li><a onclick="clickSingleA(this)" class="single" href = "#home">&nbsp;</a></li>
+                    <li><a onclick="clickSingleA(this)" class="single" href = "#about">&nbsp;</a></li>
+                    <li><a onclick="clickSingleA(this)" class="single" href = "#skills">&nbsp;</a></li>
+                    <li><a onclick="clickSingleA(this)" class="single" href = "#projects">&nbsp;</a></li>
+                    <li><a onclick="clickSingleA(this)" class="single" href = "#contact">&nbsp;</a></li>
+                </ul>
+        </div>
+
+
+           <div class = "section-heading">
             <h2>About Me</h2>
             <h3 >An introduction</h3>
             </div>
@@ -118,9 +133,11 @@
                     </div>
                 </div>
             </div>
+            <div id = "skills"></div>
         </section>
 
-        <div  id = "skills" class = "section-heading">
+
+        <div  class = "section-heading">
             <h2>skills</h2>
             <h3></h3>
         </div>
@@ -162,10 +179,10 @@
                         </div>
                     </div>
             </div>
-            
+            <div id = "projects"></div>
         </section>
 
-        <div id = "projects" class = "section-heading">
+        <div class = "section-heading">
             <h2>Projects</h2>
             <h3></h3>
         </div>
@@ -177,7 +194,7 @@
                     <div class = "projects__info">
                         <p class = "projects__no">First Project</p>
                         <h3 class = "projects__title">Digisolve</h3>
-                        <p class = "projects__desc">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+                        <p class = "projects__desc">A colourful theme showcasing a model Digital marketing agency using sample pictures and developed using <strong>Html</strong> <strong>CSS</strong>  and a little <strong>Jquery</strong>.</p>
                         <p class = "projects__components">CSS 
                             Html
                             JavaScript 
@@ -188,7 +205,7 @@
                     <div class = "projects__info projects__info-left">
                         <p class = "projects__no">Second Project</p>
                         <h3 class = "projects__title">LakeView</h3>
-                        <p class = "projects__desc">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+                        <p class = "projects__desc">A country club website developed using <strong>Html</strong> <strong>CSS</strong> and <strong>SASS</strong>. This website was my first time using SASS and elements such as incorporating a background video, overlays and creating a form.</p>
                         <p class = "projects__components">CSS 
                             Html
                             JavaScript 
@@ -201,7 +218,7 @@
                     <div class = "projects__info">
                         <p class = "projects__no">Third Project</p>
                         <h3 class = "projects__title">BuzzWhizz</h3>
-                        <p class = "projects__desc">A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.</p>
+                        <p class = "projects__desc">BuzzWhizz is a website built using  <strong>Html</strong> <strong>CSS</strong>  and <strong>SASS</strong>. This has new elements such as creating a sort of carousel to showcase reviews of the business as well as using flexbox to properly space elements.</p>
                         <p class = "projects__components">CSS 
                             Html
                             JavaScript 
@@ -209,9 +226,10 @@
                     </div>
                 </div>
             </div>
+            <div id = "contact"></div>
         </section>
 
-         <div  id = "contact" class = "section-heading">
+         <div  id = "contact" class = "contact-heading">
             <h2>Get in Touch</h2>
             <h3></h3>
         </div>
@@ -246,33 +264,9 @@
         </footer>
 
     </body>
-<script type="text/javascript" src="resources/js/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+<script type="text/javascript" src = "resources/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="resources/js/script.js"></script>
+<script type="text/javascript" src="resources/js/scroll.js"></script>
         
 </html>
