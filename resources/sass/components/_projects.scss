@@ -1,6 +1,13 @@
+.container{
+	width:70%;
+	margin:0 auto;
+	position:relative;
+}
+
 .projects{
-	margin:5rem 4rem;
-  	padding:0rem 10rem;
+	overflow:hidden;
+	display:flex;
+	flex-direction:column;
   	//border: 2px solid purple;
 
 
@@ -8,22 +15,76 @@
 	&__block {
 		//border:2px solid black;
 		display:flex;
-		margin-bottom:20rem;
-	
-		
+		width:300%;
+		transition:all 0.4s;
 
-		&-2 {
+	}
+	&__blocks {
+		width:100%;
+		height:60rem;
+		//padding:0rem 20rem;
 
-		}
+		padding:3rem;
+		transition: all 0.5s;
+		//border:2px solid var(--color-primary);
+
 
 	}
 
+
+	&__radio-btn{
+		display:none;
+	}
+
+	&__nav{
+		display:flex;
+		order:1;
+		justify-content:center;
+	}
+
+	&__radio-label {
+		display:block;
+		width:1.2rem;
+		height:1.2rem;
+		border-radius:50%;
+		border:.2rem solid var(--color-primary);
+		margin:1.6rem;
+		cursor:pointer;
+		background-color:var(--color-white);
+	}
+
+		&__radio-btn:checked:nth-of-type(1) ~ &__nav &__radio-label:nth-of-type(1) {
+		background-color:var(--color-primary);
+
+	}
+
+	&__radio-btn:checked:nth-of-type(2) ~ &__nav &__radio-label:nth-of-type(2) {
+		background-color:var(--color-primary);
+
+	}
+
+	&__radio-btn:checked:nth-of-type(3) ~ &__nav &__radio-label:nth-of-type(3) {
+		background-color:var(--color-primary);
+
+	}
+
+	&__radio-btn:checked:nth-of-type(2) ~ &__block {
+		transform:translate(-33.33%);
+	}
+
+	&__radio-btn:checked:nth-of-type(3) ~ &__block {
+		transform:translate(-66.67%);
+	}
+
 	&__img {
-		height:40rem;
+		height:30rem;
 		width:auto;
 		border-radius:.5rem;
-		margin-left:3rem;
 		transition: all 0.4s;
+		//margin-left:8rem;
+		margin-left: auto;
+  		margin-right: auto;
+  		display:block;
 
 		&:linked,
 		&:visted {
@@ -32,32 +93,24 @@
 
 		&:hover{
 			box-shadow:1rem 1.5rem 2rem rgba(black, 0.3);
-			transform:translate(0rem, -.5rem);
+			transform:translate(0rem, -.4rem);
 		}
 
 		&:active{
 			box-shadow:.5rem 1rem 2rem rgba(black, 0.5);
 			transform:translate(0rem, -.2rem);
 		}
-
-		&-left{
-			//margin-right:3rem;
-		}
-
 	}
 
 	&__info {
-		width:100%;
+		width:60rem;
 		margin-top:2rem;
 		//border:2px solid pink;
-		transform:translateX(-5rem);
-		text-align:right;
+		text-align:center;
+		margin-left: auto;
+  		margin-right: auto;
+  		display:block;
 
-		&-left {
-			text-align:left;
-			transform:translateX(8rem);
-
-		}
 	}
 
 	&__no{
@@ -94,4 +147,29 @@
 		word-spacing:1rem;
 	}
 
+}
+
+.arrow {
+	position:relative;
+}
+
+.left-arrow, .right-arrow{
+	width:3rem;
+	height:3rem;
+	//fill:var(--color-primary);
+	fill:transparent;
+	position:absolute;
+	cursor:pointer;
+	top:63%;
+
+}
+
+.left-arrow {
+	left:20%;
+}
+
+
+.right-arrow {
+
+	left:80%;
 }

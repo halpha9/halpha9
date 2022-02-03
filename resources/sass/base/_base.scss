@@ -12,12 +12,19 @@
 html {
        font-size:62.5%; // 1rem=10px 10/16 *100 % = 62.5%
 
-@media only screen 
-  and (max-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    font-size: 1.66672 px;
-    //-webkit-text-size-adjust:none;
-    //text-size-adjust:none;
+@media (max-width: 1080px){
+    font-size:8px;
+
+}
+
+@media (max-width: 768px){
+    font-size:5px;
+
+}
+
+@media (max-width: 480px){
+    font-size:3px;
+
 }
 
 

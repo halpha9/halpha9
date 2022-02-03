@@ -1,6 +1,6 @@
 .about{
 	display:flex;
-	height:50rem;
+	height:60rem;
 	//border: 2px solid green;
 	align-items: center;
 	jusitfy-content: center;
@@ -30,7 +30,12 @@
 			font-size:3.5rem;
 			text-align:center;
 			font-weight:700;
+
 		}
+	}
+
+	&__xp {
+		
 	}
 
 	&__para{
@@ -42,12 +47,13 @@
 
 	&__work {
 		display:flex;
-		align-items:center;
+		justify-content:center;
+		width:60%;
 	}
 
 	&__points{
 		text-align:center;
-		padding-right:4rem;
+		margin-right:2rem;
 	}
 
 	&__profile {
