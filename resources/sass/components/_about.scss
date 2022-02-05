@@ -5,6 +5,10 @@
 	align-items: center;
 	jusitfy-content: center;
 	margin-bottom:8rem;
+
+	@media (max-width: 480px){
+		height:80rem;
+    }	
 	
 
 	&__left{
@@ -23,6 +27,10 @@
 			font-size:1.8rem;
 			text-align:center;
 			font-weight:350;
+
+			@media (max-width: 480px){
+				font-size:1.5rem;
+    		}
 		}
 
 		& h2{
@@ -35,7 +43,7 @@
 	}
 
 	&__xp {
-		
+
 	}
 
 	&__para{
@@ -102,6 +110,7 @@
 		box-shadow:0.5rem 1.5rem 4rem rgba(black, .3);
 		filter:grayscale(100%);
 		transition: all .7s;
+		border-radius:2rem;
 	}
 
 	&__border{
@@ -115,6 +124,7 @@
 		opacity:.4;
 		z-index:-1;
 		transition: all .7s;
+		border-radius:2rem;
 	}
 
 	&__overlay {
@@ -125,5 +135,6 @@
 		left:0;
 		transition: all .7s;
 		background-image:linear-gradient(to right bottom, rgba($color-primary-light,0.6), rgba($color-primary,0.6 ));
+		border-radius:2rem;
 	}
 }

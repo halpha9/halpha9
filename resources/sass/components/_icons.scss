@@ -67,16 +67,20 @@
 
 .moon {
 
-	left: 96%;
-	top:50%;
-	position:fixed;
+	//left: 96%;
+	//top:50%;
+	//position:fixed;
 
 	&__icon{
 		height:2rem;
 		width:2rem;
 		margin:1rem;
-		fill:var(--color-white);
+		fill:var(--color-lightgrey);
 		transition:transform 0.5s;
+		display:block;
+		color:var(--color-darkgrey);
+		cursor:pointer;
+
 
 		&:hover{
 		transform:scale(1.1);
