@@ -13,15 +13,6 @@
   --color-instagram:#c32aa3;
   --color-linkedin:#0a66c2; }
 
-/* MEDIA QUERY BREAKPOINTS 
-    0-576px for portrait phones.
-    577-768px for tablets in portrait mode.
-    769-991 for tablets in landcape mode.
-    992-1200px for laptops.
-    1200px+ for large devices.
-
-
-*/
 .header {
   width: 100%;
   height: 65rem;
@@ -199,7 +190,7 @@
     text-shadow: 0.3rem 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
     transform: translateY(-0.1rem); }
 
-label {
+.header__label {
   margin: 0 4rem 0 0;
   font-size: 3rem;
   line-height: 7rem;
@@ -212,7 +203,7 @@ label {
   display: none; }
 
 @media (max-width: 480px) {
-  label {
+  .header__label {
     display: block;
     cursor: pointer; }
   #toggle:checked + .header__main-nav {
@@ -261,7 +252,7 @@ html {
       font-size: 10px; } }
   @media (max-width: 768px) {
     html {
-      font-size: 5px; } }
+      font-size: 6px; } }
   @media (max-width: 480px) {
     html {
       font-size: 7px; } }

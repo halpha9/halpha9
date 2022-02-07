@@ -304,7 +304,7 @@
 	
 }
 
-label {
+.header__label {
 		margin: 0 4rem 0 0;
 		font-size:3rem;
 		line-height:7rem;
@@ -319,7 +319,7 @@ label {
 }
 
 	@media (max-width: 480px){
-			label {
+			.header__label {
 				display:block;
 				cursor:pointer;
 			}
