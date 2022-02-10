@@ -1,4 +1,4 @@
-.container{
+container{
 	width:70%;
 	margin:0 auto;
 	position:relative;
@@ -128,7 +128,7 @@
 	}
 
 	&__desc {
-		background-color:var(--color-lightgrey-2);
+		background-color:var(--color-lightgrey-3);
 		border-radius:.5rem;
 		padding: 2rem 2.5rem;
 		box-shadow:.2rem .3rem 2rem rgba(black, 0.2);

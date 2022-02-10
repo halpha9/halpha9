@@ -5,6 +5,7 @@
   --color-white:#fff;
   --color-lightgrey:#BCBCBC;
   --color-lightgrey-2:#f2f2f2;
+  --color-lightgrey-3:#fafafa;
   --color-darkgrey:#808080;
   --color-darkgrey-2:#191919;
   --color-yellow:#f2cf0d;
@@ -236,6 +237,10 @@
         .footer__nav ul li a:hover, .footer__nav ul li a:active {
           border-bottom: 2px solid var(--color-primary); }
 
+.svg__page {
+  position: relative;
+  top: 10px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -293,10 +298,11 @@ body {
   font-size: 1.6rem;
   border-radius: 3rem;
   border: 2px solid var(--color-primary);
+  background-color: --color-darkgrey;
   padding: 1rem 3rem; }
   .btn-grtg:link, .btn-grtg:visited {
     color: var(--color-darkgrey);
-    background-color: transparent;
+    background-color: --color-darkgrey;
     transition: all 0.4s;
     background-position: 0%;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-primary) 50%);
@@ -313,7 +319,8 @@ body {
   position: fixed;
   left: 94%;
   top: 40%;
-  transition: all 1s; }
+  transition: all 1s;
+  z-index: 1; }
   .navigation li {
     margin: 1rem; }
     .navigation li a {
@@ -338,7 +345,8 @@ body {
   left: 3%;
   jusitify-content: center;
   position: fixed;
-  background-color: transparent; }
+  background-color: transparent;
+  z-index: 1; }
 
 .instagram__icon, .facebook__icon, .twitter__icon, .linkedin__icon {
   height: 2rem;
@@ -516,7 +524,7 @@ body {
     border-left: 2px solid var(--color-primary);
     background-color: var(--color-lightgrey-2); }
 
-.container {
+container {
   width: 70%;
   margin: 0 auto;
   position: relative; }
@@ -593,7 +601,7 @@ body {
     margin-bottom: 2.3rem;
     color: var(--color-lightgrey); }
   .projects__desc {
-    background-color: var(--color-lightgrey-2);
+    background-color: var(--color-lightgrey-3);
     border-radius: .5rem;
     padding: 2rem 2.5rem;
     box-shadow: 0.2rem 0.3rem 2rem rgba(0, 0, 0, 0.2);
@@ -631,7 +639,7 @@ body {
     height: 15rem;
     border-radius: 2rem;
     display: flex;
-    background-color: var(--color-lightgrey-2);
+    background-color: var(--color-lightgrey-3);
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0.2rem 0.3rem 2rem rgba(0, 0, 0, 0.2); }
@@ -640,6 +648,10 @@ body {
     color: var(--color-darkgrey);
     text-align: center; }
 
-.section-about, .section-skills, .section-projects, .section-contact, .section-header {
+.section-about, .section-projects {
+  padding-top: 4rem;
+  background-color: var(--color-lightgrey-2); }
+
+.section-header, .section-skills, .section-contact {
   background-color: var(--color-white);
-  padding-bottom: 8rem; }
+  padding-top: 4rem; }
