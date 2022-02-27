@@ -313,6 +313,9 @@ body {
     transform: translateX(8px);
     background-position: 100%; }
 
+.hidden {
+  display: none; }
+
 .navigation {
   list-style: none;
   position: fixed;
@@ -342,7 +345,7 @@ body {
   flex-direction: column;
   top: 40%;
   left: 3%;
-  jusitify-content: center;
+  justify-content: center;
   position: fixed;
   background-color: transparent;
   z-index: 1; }
@@ -523,10 +526,15 @@ body {
     border-left: 2px solid var(--color-primary);
     background-color: var(--color-lightgrey-2); }
 
-container {
-  width: 70%;
+.container {
+  width: 50%;
   margin: 0 auto;
   position: relative; }
+
+.modal {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  z-index: 100; }
 
 .projects {
   overflow: hidden;
@@ -534,11 +542,12 @@ container {
   flex-direction: column; }
   .projects__block {
     display: flex;
-    width: 300%;
+    width: 600%;
     transition: all 0.4s; }
   .projects__blocks {
     width: 100%;
     height: 60rem;
+    margin: 3rem 0;
     padding: 3rem;
     transition: all 0.5s; }
   .projects__radio-btn {
@@ -562,10 +571,22 @@ container {
     background-color: var(--color-primary); }
   .projects__radio-btn:checked:nth-of-type(3) ~ .projects__nav .projects__radio-label:nth-of-type(3) {
     background-color: var(--color-primary); }
-  .projects__radio-btn:checked:nth-of-type(2) ~ .projects__block {
-    transform: translate(-33.33%); }
+  .projects__radio-btn:checked:nth-of-type(4) ~ .projects__nav .projects__radio-label:nth-of-type(4) {
+    background-color: var(--color-primary); }
+  .projects__radio-btn:checked:nth-of-type(5) ~ .projects__nav .projects__radio-label:nth-of-type(5) {
+    background-color: var(--color-primary); }
+  .projects__radio-btn:checked:nth-of-type(6) ~ .projects__nav .projects__radio-label:nth-of-type(6) {
+    background-color: var(--color-primary); }
   .projects__radio-btn:checked:nth-of-type(3) ~ .projects__block {
-    transform: translate(-66.67%); }
+    transform: translate(-33.3%); }
+  .projects__radio-btn:checked:nth-of-type(4) ~ .projects__block {
+    transform: translate(-49.96%); }
+  .projects__radio-btn:checked:nth-of-type(5) ~ .projects__block {
+    transform: translate(-66.63%); }
+  .projects__radio-btn:checked:nth-of-type(6) ~ .projects__block {
+    transform: translate(-83.3%); }
+  .projects__radio-btn:checked:nth-of-type(2) ~ .projects__block {
+    transform: translate(-16.63%); }
   .projects__img {
     height: 30rem;
     width: auto;
@@ -589,6 +610,15 @@ container {
     margin-left: auto;
     margin-right: auto;
     display: block; }
+    .projects__info svg {
+      width: 2rem;
+      height: 2rem;
+      text-align: right;
+      fill: var(--color-lightgrey);
+      transition: all 0.4s;
+      padding-right: .3rem; }
+      .projects__info svg:hover {
+        transform: scale(1.07); }
   .projects__no {
     text-transform: uppercase;
     font-weight: 400;
@@ -605,30 +635,55 @@ container {
     padding: 2rem 2.5rem;
     box-shadow: 0.2rem 0.3rem 2rem rgba(0, 0, 0, 0.2);
     margin-bottom: 2.5rem;
-    text-align: left;
-    z-index: 2; }
+    text-align: center; }
   .projects__components {
     font-weight: 500;
     font-size: 1.5rem;
     word-spacing: 1rem; }
-
-.arrow {
-  position: relative; }
+  .projects__links {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    cursor: pointer; }
 
 .left-arrow, .right-arrow {
-  display: none;
+  position: absolute;
+  justify-content: space-between;
+  text-align: space-between;
   width: 3rem;
   height: 3rem;
   fill: var(--color-primary);
-  position: absolute;
   cursor: pointer;
-  top: 90%; }
+  transition: all .3s; }
+  .left-arrow:hover, .right-arrow:hover {
+    transform: scale(1.07); }
 
 .left-arrow {
-  left: 20%; }
+  top: 43%;
+  left: -20%; }
 
 .right-arrow {
-  left: 80%; }
+  top: 43%;
+  left: 110%; }
+
+.overlay {
+  background-color: var(--color-primary);
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%; }
+
+.close-modal {
+  position: fixed;
+  top: 5%;
+  right: -10%;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 1; }
 
 .contact {
   width: 70%;
@@ -650,6 +705,11 @@ container {
 .section-about, .section-projects {
   padding-top: 4rem;
   background-color: var(--color-lightgrey-2); }
+
+.section-projects {
+  padding-top: 4rem;
+  background-color: var(--color-lightgrey-2);
+  transition: all 0.5s; }
 
 .section-header, .section-skills, .section-contact {
   background-color: var(--color-white);

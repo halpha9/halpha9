@@ -4,6 +4,13 @@
 	background-color:var(--color-lightgrey-2);
 }
 
+.section-projects{
+	padding-top:4rem;
+	//padding-bottom:8rem;
+	background-color:var(--color-lightgrey-2);
+	transition:all 0.5s;
+}
+
 .section-header, .section-skills, .section-contact {
 	background-color:var(--color-white);
 	//padding-bottom:8rem;
