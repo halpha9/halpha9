@@ -46,32 +46,48 @@ const container = document.querySelector('.container');
 const btnCloseModal = document.querySelector('.close-modal');
 const btnsOpenModal = document.querySelectorAll('.show-modal');
 const projectsSection = document.querySelector('.section-projects');
-const radioNav = document.querySelectorAll('.projects__nav')
+const radioNav = document.querySelectorAll('.projects__radio-label')
 const svg = document.querySelector('.svg__page')
+const title = document.querySelectorAll('.projects__components');
+const no = document.querySelectorAll('.projects__no');
 
 const openModal = function () {
     container.classList.add('modal');
     overlay.classList.remove('hidden');
     btnCloseModal.classList.remove('hidden');
-    projectsSection.style.backgroundColor = "white";
-    radioNav.style.display = "none";
-    radioNav.classList.add('hidden');
-    svg.classList.add('hidden');
-    disableScroll();
-
+    //title.style.color = "white";
     
+    for( let i = 0; i < radioNav.length; i++) {
+        radioNav[i].style.display = "none";
+     }
+
+    for( let i = 0; i < title.length; i++) {
+        title[i].style.color = "var(--color-lightgrey)";
+     }
+
+    for( let i = 0; i < no.length; i++) {
+        no[i].style.color = "var(--color-lightgrey-2)";
+     }
 };
 const closeModal = function () {
     container.classList.remove('modal');
     overlay.classList.add('hidden');
     btnCloseModal.classList.add('hidden');
-    projectsSection.style.backgroundColor = "var(--color-lightgrey-2)";
-    radioNav.style.display = "flex";
-    radioNav.classList.remove('hidden');
-    svg.classList.remove('hidden');
-    enableScroll();
+
+    for( let i = 0; i < title.length; i++) {
+        title[i].style.color = "var(--color-darkgrey)";
+    }
+    
+     for( let i = 0; i < no.length; i++) {
+        no[i].style.color = "var(--color-lightgrey-1)";
+    }
+
+    for( let i = 0; i < radioNav.length; i++) {
+        radioNav[i].style.display = "flex";
+     }
 };
 
+console.log(title)
 
 for( let i = 0; i < btnsOpenModal.length; i++) {
     btnsOpenModal[i].addEventListener('click', openModal);

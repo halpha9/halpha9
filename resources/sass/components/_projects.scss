@@ -2,12 +2,19 @@
 	width:50%;
 	margin:0 auto;
 	position:relative;
+	transition:all .5s;
+
 }
 
 .modal {
 	transform: scale(1.1);
-	transition:all 0.5s;
-	z-index:100;
+	left:25%;
+	top:0%;
+	z-index:50;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	position:fixed;
 }
 
 
@@ -60,7 +67,7 @@
 		border:.2rem solid var(--color-primary);
 		margin:1.6rem;
 		cursor:pointer;
-		background-color:var(--color-white);
+		background-color:var(--color-lightgrey-3);
 	}
 
 		&__radio-btn:checked:nth-of-type(1) ~ &__nav &__radio-label:nth-of-type(1) {
@@ -191,6 +198,7 @@
 		font-weight:500;
 		font-size:1.5rem;
 		word-spacing:1rem;
+		color:var(--color-darkgrey);
 	}
 
 	&__links {
@@ -236,10 +244,13 @@
 }
 
 .overlay {
-	background-color:var(--color-primary);
-	opacity: 0;
-	//backdrop-filter: blur(3px);
-	position: absolute;
+	background-color:black;
+	opacity: .65;
+	backdrop-filter: blur(3rem);
+	//filter: blur(1rem);
+	position: fixed;
+	left:0%;
+	top:0%;
 	z-index: 2;
 	width: 100%;
 	height: 100%;
@@ -250,13 +261,17 @@
   }
 
 .close-modal {
-	position: fixed;
+	position: absolute;
 	top: 5%;
-	right: -10%;
+	right:0%;
 	font-size: 5rem;
-	color: #333;
+	color: white;
 	cursor: pointer;
 	border: none;
 	background: none;
-	z-index:1;
+	z-index:100;
+}
+
+.svg__link {
+	text-decoration:none; 
 }
