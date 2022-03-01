@@ -609,6 +609,9 @@ body {
     .projects__img:active {
       box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5);
       transform: translate(0rem, -0.2rem); }
+  .projects__svg-1 {
+    width: 3rem;
+    height: 3rem; }
   .projects__info {
     width: 60rem;
     margin-top: 2rem;
