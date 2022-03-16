@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 
     
 	   
@@ -23,11 +24,11 @@
                     <label class ="header__label" for="toggle">&#9776;</label>
                     <input class ="header__input" type="checkbox" id="toggle"/>
                     <ul class = "header__main-nav">
-                        <li><a href = "#home">Home</a></li>
-                        <li><a href = "#about">About</a></li>
-                        <li><a href = "#skills">Skills</a></li>
-                        <li><a href = "#projects">Projects</a></li>
-                        <li><a href = "#contact">Contact</a></li>
+                        <li><a class = "header__links" href = "#home">Home</a></li>
+                        <li><a class = "header__links" href = "#about">About</a></li>
+                        <li><a class = "header__links" href = "#skills">Skills</a></li>
+                        <li><a class = "header__links" href = "#projects">Projects</a></li>
+                        <li><a class = "header__links" href = "#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -110,7 +111,7 @@
                     </g>
                 </g>
             </svg>
-        <section class = "section-about">
+        <section class = "section section-about">
 
         <div id = "about"></div>
            <div class = "section-heading">
@@ -164,7 +165,7 @@
         
 
 
-        <section  class = "section-skills">
+        <section  class = "section section-skills">
 
 
             <div  class = "section-heading">
@@ -225,7 +226,7 @@
         <div class="overlay hidden"></div>
         
 
-        <section  class ="section-projects">
+        <section  class ="section section-projects">
             
             <div class = "section-heading">
                 <h2>Projects</h2>
@@ -244,21 +245,14 @@
                 <div class = "projects">
                     
                     <button class="close-modal hidden">&times;</button>
-                    <input type="radio" class="projects__radio-btn" id = "slide1" name = "slide" value ="1" checked>
+                    <input type="radio" class="projects__radio-btn" id = "slide1" name = "slide" value ="1">
                     <input type="radio" class="projects__radio-btn" id = "slide2" name = "slide" value ="2">
                     <input type="radio" class="projects__radio-btn" id = "slide3" name = "slide" value ="3">
                     <input type="radio" class="projects__radio-btn" id = "slide4" name = "slide" value ="4">
                     <input type="radio" class="projects__radio-btn" id = "slide5" name = "slide" value ="5">
                     <input type="radio" class="projects__radio-btn" id = "slide6" name = "slide" value ="6">
 
-                    <div class = "projects__nav">
-                        <label class = "projects__radio-label" for = "slide1">&nbsp;</label>
-                        <label class = "projects__radio-label" for = "slide2">&nbsp;</label>
-                        <label class = "projects__radio-label" for = "slide3">&nbsp;</label>
-                        <label class = "projects__radio-label" for = "slide4">&nbsp;</label>
-                        <label class = "projects__radio-label" for = "slide5">&nbsp;</label>
-                        <label class = "projects__radio-label" for = "slide6">&nbsp;</label>
-                    </div>
+
                     <div class = "projects__block">
                         <div class =  "projects__blocks">
                             <a href = "https://halpha9.github.io/Digi/"><img src="resources/img/digisolve1.png" alt = "Digisolve" class = "projects__img"></a>
@@ -475,6 +469,15 @@
                     </div>
                 </div>
             </div>
+
+            <div class = "projects__nav">
+                <label class = "projects__radio-label" data-slide ="0" for = "slide0">&nbsp;</label>
+                <label class = "projects__radio-label" data-slide ="1" for = "slide1">&nbsp;</label>
+                <label class = "projects__radio-label" data-slide ="2" for = "slide2">&nbsp;</label>
+                <label class = "projects__radio-label" data-slide ="3" for = "slide3">&nbsp;</label>
+                <label class = "projects__radio-label" data-slide ="4" for = "slide4">&nbsp;</label>
+                <label class = "projects__radio-label" data-slide ="5" for = "slide5">&nbsp;</label>
+            </div>
             </div>
 
             
@@ -496,12 +499,15 @@
         </section>
         
 
-        <div class = "contact-heading">
-            <h2>Get in Touch</h2>
-            <h3></h3>
-        </div>
 
-        <section  class = "section-contact">
+
+        <section  class = "section section-contact">
+
+            <div class = "contact-heading">
+                <h2>Get in Touch</h2>
+                <h3></h3>
+            </div>
+            
             <div class = "contact">
                 <div class = "contact__block">
                     <div>
@@ -532,10 +538,9 @@
     
     </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src = "resources/js/jquery.waypoints.min.js"></script>
 <script type="text/javascript" src="resources/js/script.js"></script>
 <script type="text/javascript" src="resources/js/scroll.js"></script>
-<script src = "resources/js/slideranimation.js"></script>
+
 
         
 </html>
