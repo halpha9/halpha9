@@ -20,7 +20,7 @@
   background-color: var(--color-white); }
   @media (max-width: 480px) {
     .header {
-      height: 80rem; } }
+      height: 50rem; } }
   .header__block {
     display: flex;
     justify-content: space-between;
@@ -270,7 +270,7 @@ html {
       font-size: 6px; } }
   @media (max-width: 480px) {
     html {
-      font-size: 7px; } }
+      font-size: 4.5px; } }
 
 body {
   font-family: 'Work Sans', sans-serif;
