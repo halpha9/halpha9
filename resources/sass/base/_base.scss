@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    caret-color: transparent;
 }
 
 *,
@@ -38,7 +39,7 @@ html {
 }
 
 @media (max-width: 480px){
-    font-size:7px;
+    font-size:4.5px;
 
 }
 

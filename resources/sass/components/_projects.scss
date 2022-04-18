@@ -32,19 +32,13 @@
 
 
 	&__block {
-		//border:2px solid black;
-		//max-width: 100rem;
-		//overflow:hidden;
   		height: 50rem;
+		width:100%;
   		margin: 0 auto;
   		position: relative;
 		display:flex;
-		// display:flex;
-		// width:600%;
-		// transition:all 0.4s;
-		//transform:translate(8.33%);
-
 	}
+	
 	&__blocks {
 
 		width:100%;
