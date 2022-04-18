@@ -1,0 +1,24 @@
+.section-about{
+	padding-top:4rem;
+	//padding-bottom:8rem;
+	background-color:var(--color-lightgrey-2);
+	transition:all 1s;
+}
+
+.section-projects{
+	padding-top:4rem;
+	//padding-bottom:8rem;
+	background-color:var(--color-lightgrey-2);
+	transition:all 1s;
+}
+
+.section-header, .section-skills, .section-contact {
+	background-color:var(--color-white);
+	//padding-bottom:8rem;
+	padding-top:4rem;
+	transition:all 1s;
+}
+
+.section-hidden {
+	opacity: 0;
+  }
